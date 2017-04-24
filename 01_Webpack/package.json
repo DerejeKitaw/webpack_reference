@@ -7,15 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "DerejeKitaw",
+  "author": "Dereje Kitaw",
   "license": "ISC",
   "devDependencies": {
-    "babel-core": "^6.2.1",
-    "babel-loader": "^6.2.0",
-    "babel-preset-es2015": "^6.1.18",
-    "jshint": "^2.8.0",
-    "jshint-loader": "^0.8.3",
-    "node-libs-browser": "^0.5.3",
-    "webpack": "^1.12.9"
+    "bable": "1.0.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "jshint": "^2.9.4",
+    "jshint-loader": "^0.8.4",
+    "node-libs-browser": "^2.0.0",
+    "webpack": "^2.4.1"
   }
 }
