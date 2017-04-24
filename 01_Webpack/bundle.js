@@ -44,7 +44,7 @@
 /* 0 */
 /***/ function(module, exports) {
 
-	document.write("Hello World from webpack");
+	document.write("Hello World from webpack in watch mode!!");
 
 	console.log('App loaded');
 
