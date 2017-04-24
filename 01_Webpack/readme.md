@@ -12,3 +12,6 @@
     start the server by 
         webpack-dev-server
         http://localhost:8080 to see the page
+
+        to see webpack is ready you can add
+        http://localhost:8080/webpack-dev-server/
