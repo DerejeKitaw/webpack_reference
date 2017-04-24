@@ -22,4 +22,8 @@
 06_Using Loaders
     add package.json file and add babel , jshint
     then npm install to install all from the package.json file
-    
+07_Creating a Start Script 
+     "scripts": {
+        "start": "webpack-dev-server"
+     }
+     now can run npm start
