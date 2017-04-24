@@ -15,3 +15,7 @@
 
         to see webpack is ready you can add
         http://localhost:8080/webpack-dev-server/
+05_Add login.js and utils.js file
+    login.js  -> will be loaded first bc required in the first
+     utils.js -> required by all files like Jquery plugin. We dont need to 
+                 require in every file....add it to the enty points of webpack config
