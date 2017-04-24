@@ -19,3 +19,7 @@
     login.js  -> will be loaded first bc required in the first
      utils.js -> required by all files like Jquery plugin. We dont need to 
                  require in every file....add it to the enty points of webpack config
+06_Using Loaders
+    add package.json file and add babel , jshint
+    then npm install to install all from the package.json file
+    
