@@ -5,6 +5,17 @@ module.exports = {
     },
     watch: true,
     module: {
+        //preloaders run befor loaders run
+        //preloaders is renamed to rule in recent version of webpack
+
+         rules: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: 'jshint-loader'
+            }
+        ],
+
         loaders: [
             {
                 test: /\.es6$/,
@@ -15,6 +26,6 @@ module.exports = {
     },
     resolve: {
             //webpack will look for no extensions, then js file then es6
-            extensions: ['','.js','.es6']
+            extensions: ['*','.js','.es6']
         }
 }
