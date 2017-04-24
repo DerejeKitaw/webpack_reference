@@ -6,3 +6,9 @@
     webpack --watch
     or
     on webpack.config file add watch: true
+04_install webpack server globaly 
+    npm install webpack-dev-server -g
+
+    start the server by 
+        webpack-dev-server
+        http://localhost:8080 to see the page
