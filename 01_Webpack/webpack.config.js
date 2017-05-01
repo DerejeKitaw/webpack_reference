@@ -1,19 +1,29 @@
+var path = require('path');
+
 module.exports = {
+    context: path.resolve('js'), //Set relative path for the enty key. So now webpack will see utils.js and app.js inside js directory
     entry: ["./app.js","./utils"],
     output:{
-        filename: "public/bundle.js"
+        path: path.resolve('build/js/'),
+        publicPath: '/public/assets/js/',//same as what in in the index.html
+        filename: "bundle.js"
+    },
+
+    devServer: {
+        contentBase: 'public' //any reqest from the root is going to come from public
     },
     watch: true,
     module: {
         //preloaders run befor loaders run
         //preloaders is renamed to rule in recent version of webpack
 
-         rules: [
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                loader: 'jshint-loader'
-            }
+        rules: [
+            //Just for now comment this
+            // {
+            //     test: /\.js$/,
+            //     exclude: /node_modules/,
+            //     loader: 'jshint-loader'
+            // }
         ],
 
         loaders: [
