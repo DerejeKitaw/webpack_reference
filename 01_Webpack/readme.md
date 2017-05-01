@@ -15,6 +15,10 @@
 
         to see webpack is ready you can add
         http://localhost:8080/webpack-dev-server/
+
+    If you want to run web pack with out app but with auto watch
+    use 
+        `webpack-dev-server --inline`
 05_Add login.js and utils.js file
     login.js  -> will be loaded first bc required in the first
      utils.js -> required by all files like Jquery plugin. We dont need to 
