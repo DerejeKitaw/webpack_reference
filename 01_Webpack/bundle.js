@@ -68,36 +68,18 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-__webpack_require__(2);
-//by default webpack give js extentions for a file. So we need extention resolver
-document.write("Hello World from webpack dev in watch mode!!");
-
-console.log('App loaded');
-
+throw new Error("Module build failed: Error: ENOENT: no such file or directory, open '/Users/derejekitaw/00_Angular_Projects/00_references/08_webBuildSystem/03_webpack/Webpack_reference/01_Webpack/app.js'\n    at Error (native)");
 
 /***/ }),
 /* 1 */
 /***/ (function(module, exports) {
 
-// This is global JS provided to all apps.
-console.log('logging from the utils.js file ...');
-
+throw new Error("Module build failed: Error: ENOENT: no such file or directory, open '/Users/derejekitaw/00_Angular_Projects/00_references/08_webBuildSystem/03_webpack/Webpack_reference/01_Webpack/utils.js'\n    at Error (native)");
 
 /***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-let login = (username, password) => {
-    if(username !=='admin' || password !== 'wrongpass'){
-        console.log('incorrect login');
-    }
-};
-
-login ('admin','pass');
-
-/***/ }),
+/* 2 */,
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
