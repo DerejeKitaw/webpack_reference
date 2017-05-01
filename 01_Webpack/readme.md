@@ -31,3 +31,20 @@
         "start": "webpack-dev-server"
      }
      now can run npm start
+
+09_The difference between development and production webpack
+    To minify bundle file and ri=un web pack
+        webpack -p     `Will minimize the bundle.js file in command line`
+
+    To strip some item we need to install 
+        npm install strip-loader  --save-dev
+        `This will install stip-loader plug in`
+
+    Create production webpack config file just for production
+        webpack-production.config.js
+        To run this
+        webpack --config webpack-production.config.js -p
+        `-p is to minify the out put`
+        npm install http-server -g to install http server and run your app
+        using http-server. Now all the consol.log shouldnt be removed in production.
+        `Note if you run npm start it will use the default web.config.js and you will not see the consol.log striped out`
