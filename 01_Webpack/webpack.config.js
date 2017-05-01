@@ -2,7 +2,7 @@ var path = require('path');
 
 module.exports = {
     context: path.resolve('js'), //Set relative path for the enty key. So now webpack will see utils.js and app.js inside js directory
-    entry: ["./app.js","./utils"],
+    entry: ["./app","./utils"],
     output:{
         path: path.resolve('build/js/'),
         publicPath: '/public/assets/js/',//same as what in in the index.html
